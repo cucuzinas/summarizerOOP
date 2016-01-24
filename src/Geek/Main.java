@@ -4,31 +4,43 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// create new instance geek called "rui" attribute values to instance properties
+		// Create a codeCadet instance
+		CodeCadet paulo = new CodeCadet(); // we just create an instance of CodeCadet, instance paulo
+
+		// assign values to the instance variables, in this case we use instance "paulo"
+		paulo.age = 45;
+		paulo.heigth = 1.75;
+		paulo.gitMaster = false;
+
+		System.out.println(paulo.age);
+		System.out.println(paulo.heigth);
+		System.out.println(paulo.gitMaster);
+
+		// assign values to the instance variables
+		CodeCadet.numberOfCadets = 16;
+
+
+		/*// create new instance geek called "rui" attribute values to instance properties
 		Geek rui = new Geek();
-		rui.geekKind = "Master Coder";
 		rui.geekSuperPower = "vi & master of a bunch of other things";
 		rui.geekAvatar = "rui_avatar.png";
 		rui.geekStatus = true;
 
 		// create new geek campelo and instance properties
 		Geek nuno = new Geek();
-		nuno.geekKind = "PadaWan Master Coder";
 		nuno.geekSuperPower = "YA! & maze labyrinth's ";
 		nuno.geekAvatar = "nuno_avatar.png";
 		nuno.geekStatus = true;
 
 		// create new geek antoninho and instance properties
 		Geek antoninho = new Geek();
-		antoninho.geekKind = "PadaWan Master Coder";
 		antoninho.geekSuperPower = "ball's & a bunch of other things";
 		antoninho.geekAvatar = "antoninho_avatar.png";
 		antoninho.geekStatus = true;
 
 		// create new geek catarina and instance properties
 		Geek catarina = new Geek();
-		catarina.geekKind = "Head of Detail";
-		catarina.geekSuperPower = "Keep you quiet and give you courage";
+		catarina.geekSuperPower = "May the force be with you";
 		catarina.geekAvatar = "catarina_avatar.png";
 		catarina.geekStatus = true;
 
