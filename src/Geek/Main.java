@@ -4,69 +4,45 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// Create a codeCadet instance
-		CodeCadet paulo = new CodeCadet(); // we just create an instance of CodeCadet, instance paulo
+		// Create a MicroWave instance
+		MicroWave blue = new MicroWave(); // we just create an instance of MicroWave, instance "blue"
+		MicroWave red = new MicroWave(); // we just create an instance of MicroWave, instance "red"
 
-		// assign values to the instance variables, in this case we use instance "paulo"
-		paulo.age = 45;
-		paulo.heigth = 1.75;
-		paulo.gitMaster = false;
+		// assign values to the instance variables, in this case we want instance "blue"
+		blue.time = 500;
+		blue.typeOfFood = "Hamburguer";
+		blue.on = true;
 
-		System.out.println(paulo.age);
-		System.out.println(paulo.heigth);
-		System.out.println(paulo.gitMaster);
+		// assign values to the instance variables, in this case we want instance "red"
+		red.time = 300;
+		red.typeOfFood = "Cake";
+		red.on = false;
 
-		// assign values to the instance variables
-		CodeCadet.numberOfCadets = 16;
+		System.out.println(blue.time);
+		System.out.println(blue.typeOfFood);
+		System.out.println(blue.on);
 
+		// assign values to the class variables
+		MicroWave.manufacturer = "XYZ";  // use the class name instead the instance name
 
-		/*// create new instance geek called "rui" attribute values to instance properties
-		Geek rui = new Geek();
-		rui.geekSuperPower = "vi & master of a bunch of other things";
-		rui.geekAvatar = "rui_avatar.png";
-		rui.geekStatus = true;
+		// call a method with no parameters
+		// action, call de method deFrost, to act in my blue MicroWave
+		blue.deFrost();
 
-		// create new geek campelo and instance properties
-		Geek nuno = new Geek();
-		nuno.geekSuperPower = "YA! & maze labyrinth's ";
-		nuno.geekAvatar = "nuno_avatar.png";
-		nuno.geekStatus = true;
+		// call a method with parameters
+		// action, call de method setTime, to display in my red MicroWave the time in this format "minutes:seconds"
+		String displayTime = red.setTime(650);
+		System.out.println("DISPLAY TIME: " + displayTime);
 
-		// create new geek antoninho and instance properties
-		Geek antoninho = new Geek();
-		antoninho.geekSuperPower = "ball's & a bunch of other things";
-		antoninho.geekAvatar = "antoninho_avatar.png";
-		antoninho.geekStatus = true;
+		// not forget static methods  >>  private variable, cant see her in MicroWave Class
+		System.out.println(MicroWave.numberOfMicroWaves);
 
-		// create new geek catarina and instance properties
-		Geek catarina = new Geek();
-		catarina.geekSuperPower = "May the force be with you";
-		catarina.geekAvatar = "catarina_avatar.png";
-		catarina.geekStatus = true;
+		// class methods are invoked with the class name
+		MicroWave.getNumberOfMicroWaves();
 
-		// calling a method of instance rui
-		String output = rui.makeCode("While");
-		System.out.println(output);
+		// i want to know if my blue MicroWave are on
 
-		rui.makeGit("Commit");
-		//System.out.println("I'm in the mood: " + pedro.mood);
-
-		/* System.out.println(pedro.need);
-
-		System.out.println(myNeeds.class);
-
-		System.out.println("Name: "+ tiago.toString());
-		System.out.println(tiago);
-		System.out.println(joana.need);
-		tiago.makeCode();
-		System.out.println(Cadet.numberOfCalculators);
-
-		System.out.println(tiago.numberOfCalculators);
-		// não utilizar este método para aceder a variável class através da instância
-		*/
-
-
-
+		// i want to know which microWave have the highest time setup
 	}
 
 }
